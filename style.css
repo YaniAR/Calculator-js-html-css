@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: monospace;
+    text-align: center;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgrey;
+}
+
+main {
+    background: black;
+    border: 10px solid rgba(47, 47, 47, 1);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    padding: 8px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+#head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#display {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #bfc5c3;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    height: 50px;
+    min-height: 100%;
+}
+
+.row {
+    display: flex;
+}
+
+button {
+    flex: 1;
+    font-size: 1.5em;
+    border-radius: 5%;
+    min-width: 0px;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d0d0d0;
+}
+
+button.zero {
+    flex: 2.25;
+}
+
+
+
+.model {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.solar {
+    background-color: #2C1C14;
+    height: 50px;
+    width: 60%;
+    align-self: flex-end;
+    border-radius: 14%;
+}
+
+h1, h3, h5 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+h3 {
+    color: rgb(192, 102, 102);
+    font-size: 1.2em;
+}
+
+@media (max-width: 600px) {
+    main {
+        max-width: 300px;
+        max-height: 500px;
+    }
+
+    #display {
+        font-size: 2em;
+    }
+
+    button {
+        font-size: 1.2em;
+    }
+}
