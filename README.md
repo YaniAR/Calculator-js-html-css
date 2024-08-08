@@ -1,1 +1,1 @@
-Live: https://yaniar.github.io/
+Live: https://yaniar.github.io/calculator
